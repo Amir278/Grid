@@ -1,0 +1,25 @@
+.container {
+	Display: grid;
+	Grid-template-columns: [main-start col-start] 1fr [col-end] 1fr 1fr 1fr [main-end];
+	Grid-auto-rows: minmax{100px; auto};
+	Gap: 20px;
+}
+
+.container > * {
+	Padding: 10px;
+	Border: 5px solid rgb(17, 105, 121);
+	Background-color: rgba(17, 105, 121, .1);
+	Border-radius: 5px;
+}
+
+.item1 {
+	Background-color: white;
+	Grid-column: main-start / main-end;
+}
+
+.item2 {
+	Background-color: rgb(17, 105, 121);
+	Color: white:
+	Grid-column: 1;
+	Grid-row: 2;
+}
