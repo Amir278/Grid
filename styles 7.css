@@ -10,3 +10,12 @@
 }
 
 /* Сетка*/
+
+.grid{
+	display: grid;
+	/*grid-template-columns: 50px 200px 50px 200px;*/
+	grid-template-columns:repeat(2, 50px 200px);
+	grid-template-rows: 100px 100px 100px;
+	
+	grid-gap:20px;
+}
